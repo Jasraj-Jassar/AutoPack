@@ -1,0 +1,10 @@
+# This project uses only Python's standard library.
+# No pip packages are required.
+#
+# Windows setup (run in PowerShell):
+# 1) Install Python (if needed):
+#    winget install --id Python.Python.3.13 -e --accept-package-agreements --accept-source-agreements
+# 2) Install SumatraPDF (required for printing):
+#    winget install --id SumatraPDF.SumatraPDF -e --accept-package-agreements --accept-source-agreements
+# 3) (Optional) Verify SumatraPDF is on PATH:
+#    where.exe SumatraPDF.exe
