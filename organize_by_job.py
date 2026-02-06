@@ -74,6 +74,12 @@ def main() -> int:
             move_pdf(pdf, dest_folder)
             moved += 1
 
+    parts_txt = insert_traveler / "parts.txt"
+    if parts_txt.is_file():
+        dest_folder.mkdir(parents=True, exist_ok=True)
+        shutil.move(str(parts_txt), str(dest_folder / parts_txt.name))
+        moved += 1
+
     print(f"Job folder: {dest_folder}")
     print(f"Moved: {moved}")
     return 0
